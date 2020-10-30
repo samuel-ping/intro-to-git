@@ -4,6 +4,13 @@
   justify-content: center;
 }
 
+.code-one-liner {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  padding: 0.3em;
+}
+
 .code-sample {
   background-color: lightgray;
   max-width: 50vw;
