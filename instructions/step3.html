@@ -5,14 +5,25 @@
     </head>
     <body>
         <h1>Hands-on Activity</h1>
-        <p>Enough talk, let's start doing stuff.
+        <p>Enough talk, let's start doing stuff. This tutorial will be using Git solely from the command line. <b>If you have any questions, don't hesitate to ask me.</b> I repeat, if you have any questions, please ask me!</p> 
+        <p>In this tutorial, you'll be adding your name to <a href="../examples/message_book.html">this notebook!</a></p>
             <ol>
-                <li>Create a <a href="https://github.com/join" target="_blank">GitHub account</a> for this, if not already.</li>
-                <li>Install Git. You can </li>
+                <li>Create a <a href="https://github.com/join" target="_blank">GitHub account</a> for this, if not already. Once you do, let me know so I can add you as a collaborator to this repository.</li>
+                <li>Install Git. You can either install it from <a href="https://git-scm.com/downloads" target="_blank">their website</a>, or (if you're on Windows) you can download Ubuntu from the Windows App Store and use WSL. If you're on Mac, Git is usually preinstalled in the terminal. Obviously there are many other ways to do this.</li>
+                <li>Verify Git is installed in your terminal by typing<span class="code-one-liner">$ git --version</span>Your terminal should show what version of Git you have installed.</li>
+                <li>Now navigate to the directory (aka folder) you want to store the sample repository in. From your current directory (which usually is your home directory), you can type<span class="code-one-liner">$ ls</span>to show all the files and subdirectories, and<span class="code-one-liner">$ cd &lt;subdirectory name&gt;</span>to enter that subdirectory. To go back a directory, type "cd ..". The two periods means to go back.</li>
+                <li>Now clone this repository using<span class="code-one-liner">$ git clone https://github.com/samuel-ping/intro-to-git.git</span></li>
+                <li>If you type the "ls" command again, you'll see this intro-to-git subdirectory! Enter this subdirectory using the "cd" command.</li>
+                <li>Using your favorite code editor (if you have VSCode installed, you should be able to type "code ." to open the directory in VSCode), go into the examples/ directory, and edit the message_book.html file to include your message!</li>
+                <li>You're not done yet! Now that you added your message, if you type<span class="code-one-liner">$ git status</span>you'll see that Git tells you that you modified the message book file.</li>
+                <li>Now add your changed file to the staging area using<span class="code-one-liner">$ git add examples/message_book.html</span>If you're already in the examples/ directory, you can omit that part from your command.</li>
+                <li>If you type "git status" again, you'll see that the file is now staged for commit! Now commit the file using<span class="code-one-liner">$ git commit -m "&lt;message stating reason for commit&gt;"</span></li>
+                <li>You can now push your changes back to the repository on GitHub. To do this, type<span class="code-one-liner">$ git push origin master</span></li>
+                <li>If you go to <a href="https://github.com/samuel-ping/intro-to-git" target="_blank">the repository</a>, you should see your changes pop up!</li>
             </ol>
 
         <div class="change-page">
-            <a href="../index.html"><-Back</a>&ensp;<a href="step3.html">Next-></a>
+            <a href="step2.html"><-Back</a>&ensp;<a href="../examples/message_book.html">Next-></a>
         </div>
     </body>
 </html>
